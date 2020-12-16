@@ -1,0 +1,116 @@
+//- This is frontend of our website
+
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Onlinefoodz
+  script(defer='' src='https://kit.fontawesome.com/6b47efa24b.js' crossorigin='anonymous')
+  script(defer='' src='../static/food.js')
+  link(rel='stylesheet' href='path/to/font-awesome/css/font-awesome.min.css')
+  link(rel='stylesheet' href='../static/food.css')
+  link(href='https://fonts.googleapis.com/css2?family=Fredoka+One&family=Staatliches&display=swap' rel='stylesheet')
+ul.nav.height-resp
+  .navlist.visible-resp
+    p#logo Online Foodz
+    li#home
+      a(href='#') Home
+    li#services
+      a(href='#s') Services
+    li#menu
+      a(href='#m') Special Menu
+    li#reservation
+      a(href='#r') Reservation
+    li#contact
+      a(href='#c') Contact Us
+  .hamburger
+    .line
+    .line
+    .line
+#para
+  h2#welcome Welcome
+  p#inner
+    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolores eum consequatur
+    | veritatis quia ea voluptas molestias maxime sunt sit, similique laboriosam. Expedita minima nobis atque
+    | a sunt eaque deserunt. Distinctio obcaecati non maxime commodi, recusandae illum eos rerum illo.
+section#secondback
+  h1#s.service Our Services
+  section#section
+    #catering
+      img#cateringimg(src='../static/images/catering.jpg' alt='Food Catering')
+      h3#catering-primary Food Catering
+      p#catering-secondary
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita distinctio
+        | eum
+        | vel at iusto id tempore. Placeat sint doloremque error dolorem officiis quisquam facilis! Nobis, aut
+        | mollitia esse, laudantium dolores consectetur accusantium, eius sequi nesciunt illo nostrum soluta
+        | odio
+        | iusto.
+    #bulk
+      img#bulkimg(src='../static/images/bulk.jpg' alt='Bulk Ordering')
+      h3#bulk-primary Bulk Ordering
+      p#bulk-secondary
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita distinctio eum
+        | vel
+        | at iusto id tempore. Placeat sint doloremque error dolorem officiis quisquam facilis! Nobis, aut
+        | mollitia esse, laudantium dolores consectetur accusantium, eius sequi nesciunt illo nostrum soluta
+        | odio
+        | iusto.
+    #online
+      img#onlineimg(src='../static/images/online.jpg' alt='Online Order')
+      h3#online-primary Online Order
+      p#online-secondary
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita distinctio
+        | eum
+        | vel at iusto id tempore. Placeat sint doloremque error dolorem officiis quisquam facilis! Nobis, aut
+        | mollitia esse, laudantium dolores consectetur accusantium, eius sequi nesciunt illo nostrum soluta
+        | odio
+        | iusto.
+  h1#m.Menu Special Menu
+  section#smenu
+    .menuin
+      p.menup.first
+        img.img(src='../static/images/paneer.jpg' alt='paneer tikka' srcset='')
+      p.menup.first
+        img.img(src='../static/images/veg.roll.jpg' alt='veg-roll' srcset='')
+    .menuin
+      p.menup
+        img.img(src='../static/images/dosa.jpg' alt='dosa' srcset='')
+      p.menup
+        img.img(src='../static/images/paneertikka.jpg' alt='paneer-tikka' srcset='')
+    .menuin
+      p.menup
+        img.img(src='../static/images/cappuccino.jpg' alt='cappuccino' srcset='')
+      p.menup
+        img.img(src='../static/images/cake.jpg' alt='cake' srcset='')
+    h3#manymore &amp;Many more....
+  h1#r.reservation Reservation
+  section#reservation
+    form#rform(action='/registration' method='POST')
+      input#name(type='text' name='name' placeholder='Enter your name')
+      input#number(type='number' name='number' placeholder='Number of seats')
+      input#date(type='date' name='date' placeholder='Enter Date')
+      input#time(type='time' name='time' placeholder='Enter timings')
+      input#submit(type='submit' value='submit' placeholder='submit')
+  h1#c.contactus Contact Us
+  section#contacts
+    h1.innercont
+      i.fa.fa-phone(aria-hidden='true')
+      | &nbsp;&nbsp;&nbsp;9512364782
+    h1.innercont
+      i.fa.fa-envelope(aria-hidden='true')
+      | &nbsp;&nbsp;&nbsp;OnlineFoodz@gmail.com
+    h1.innercont
+      i.fa.fa-map-marker(aria-hidden='true')
+      | &nbsp;&nbsp;&nbsp;Link
+      |                 Road,Ludhiana,Punjab
+section#timings
+  h2#timef Timings
+  .timein
+    p Monday-Friday&nbsp;&nbsp;:&nbsp;&nbsp;9A.M-10P.M
+  .timein
+    p Saturday&nbsp;&nbsp;:&nbsp;&nbsp;9A.M-5P.M
+  .timein
+    p Sunday&nbsp;&nbsp;:&nbsp;&nbsp;Closed
+footer#footer
+  p#copyright &copy; &nbsp; WWW.Online Foodz.com &nbsp;All rights reserved
