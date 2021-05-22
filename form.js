@@ -5,7 +5,7 @@ const pug=require('pug');
 const express=require('express');
 const app=express();
 var mongoose=require('mongoose');
-const port=80;
+const port=process.env.PORT || 80;
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
